@@ -34,8 +34,8 @@ optionImages.forEach((image, index) => {
         // умова результатів гри
         let outcomes = {
             RR: "Draw",
-            RP: "Cpu",
-            RS: "User",
+            RS: "Cpu",
+            RP: "User",
             PP: "Draw",
             PS: "Cpu",
             PR: "User",
@@ -44,7 +44,7 @@ optionImages.forEach((image, index) => {
             SP: "User",
         };
         let outComeValue = outcomes[userValue + cpuValue]; 
-        result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!`;// вивод переможця на єкран
+        result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Winner!`;// вивод переможця на єкран
     }, 2000);
     });
 })
